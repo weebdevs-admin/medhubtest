@@ -5,8 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <title>Med Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Tibbiyotni vizual hamda o'yin asosida o'rganish imkoniyati">
+    <meta content="" name="description">
+    <meta content="Med-Hub" name="keywords">
+    <meta name="author" content="Arabboy Rejabboyev">
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="./assets/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./assets/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="./assets/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./assets/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./assets/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./assets/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="./assets/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="./assets/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+  <link rel="manifest" href="./assets/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="./assets/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+    <title>Med-Hub Tibbiyotni vizual hamda o'yin asosida o'rganish imkoniyati</title>
 </head>
 <style>
   * {
@@ -168,63 +189,94 @@ let countdown;
 const quizArray = [
     {
         id: "0",
-        question: "Which is the most widely spoken language in the world?",
-        options: ["Spanish", "Mandarin", "English", "German"],
-        correct: "Mandarin",
+        question: "Bosh miya necha qismdan iborat?",
+        options: ["2 qismdan", "3 qismdan", " 4 qismdan", "5 qismdan"],
+        correct: "2 qismdan",
     },
     {
         id: "1",
-        question: "Which is the only continent in the world without a desert?",
-        options: ["North America", "Asia", "Africa", "Europe"],
-        correct: "Europe",
+        question: "Odam tanasida nimaning uzunligi 120 km, devorining sathi 40 metr kvadrat atrofida bo‘ladi?",
+        options: ["nefronning kalavasimon kanalchasi", "arteriya", "kapillyar", "siydik yo‘li"],
+        correct: "kapillyar",
     },
     {
         id: "2",
-        question: "Who invented Computer?",
-        options: ["Charles Babbage", "Henry Luce", "Henry Babbage", "Charles Luce"],
-        correct: "Charles Babbage",
+        question: "Yurak devorining tashqi qavati nima deyiladi?",
+        options: ["*Epikard;", "Endokard;", "Sistola;", "Miokard;"],
+        correct: "*Epikard;",
     },
     {
         id: "3",
-        question: "What do you call a computer on a network that requests files from another computer?",
-        options: ["A client", "A host", "A router", "A web server"],
-        correct: "A client",
+        question: "Ichi kovak organlarga, qon tomirlarga turli xil  kimyoviy moddalar yuborib turib o’rganish usuli qaysi?",
+        options: ["Yoritish;", "In’ektsiya;", "Korroziya;", "Auskultatsiya;"],
+        correct: "In’ektsiya;",
     },
     {
         id: "4",
-        question: "Hardware devices that are not part of the main computer system and are often added later to the system.",
-        options: ["Peripheral", "Clip art", "Highlight", "Execute"],
-        correct: "Peripheral",
+        question: "Tepa bo‘lakni ensa bo’lakdan qaysi egat ajratib turadi?",
+        options: ["sulcus centralis", "sulcus parietooccipitales", "sulcus precentralis", "lobus temporalis"],
+        correct: "sulcus parietooccipitales",
     },
     {
         id: "5",
-        question: "The main computer that stores the files that can be sent to computers that are networked together is:",
-        options: ["Clip art", "Mother board", "Peripheral", "File server"],
-        correct: "File server",
-    }, {
+        question: "Sulcus circul aris insulae Bosh miya pallalarining qaysi bo’lagini boshqalaridan chegaralab turadi?",
+        options: ["lobus parietalis", "lobus occipitalis","lobus insulae", "lobus temporalis"],
+        correct: "lobus insulae",
+    },
+    {
         id: "6",
-        question: "How can you catch a computer virus?",
-        options: ["Sending e-mail messages", "Using a laptop during the winter", "Opening e-mail attachments", "Shopping on-line"],
-        correct: "Opening e-mail attachments",
+        question: "Roland egati qaysi egat?",
+        options: ["sulcus centralis", "sulcus parietooccipitales","sulcus precentralis", "sulcus lateralis"],
+        correct: "sulcus centralis",
     },
     {
         id: "7",
-        question: "Google (www.google.com) is a:",
-        options: ["Search Engine", "Number in Math", "Directory of images", "Chat service on the web"],
-        correct: "Search Engine",
+        question: "Gyrus frontalis inrerior Bosh miya pallalarining qaysi bo'lagida joylashgan",
+        options: [" lobus parietalis", " lobus occipitalis","lobus frontalis", "lobus temporalis"],
+        correct: "lobus frontalis",
     },
     {
         id: "8",
-        question: "Which is not an Internet protocol?",
-        options: ["HTTP", "FTP", "STP", "IP"],
-        correct: "STP",
+        question: "Bosh miya pallalarining orolcha bo’lagida joylashgan egat?",
+        options: ["gyrus centralis", "gyrus parietooccipitales"," gyrus precentralis", "gyrus longus insulae"],
+        correct: "gyrus longus insulae",
     },
-    {
-        id: "9",
-        question: "Which of the following is not a valid domain name?",
-        options: ["www.yahoo.com", "www.yahoo.co.uk", "www.com.yahoo", "www.yahoo.co.in"],
-        correct: "www.com.yahoo",
-    },
+    // {
+    //     id: "4",
+    //     question: "Hardware devices that are not part of the main computer system and are often added later to the system.",
+    //     options: ["Peripheral", "Clip art", "Highlight", "Execute"],
+    //     correct: "Peripheral",
+    // },
+    // {
+    //     id: "5",
+    //     question: "The main computer that stores the files that can be sent to computers that are networked together is:",
+    //     options: ["Clip art", "Mother board", "Peripheral", "File server"],
+    //     correct: "File server",
+    // }, {
+    //     id: "6",
+    //     question: "How can you catch a computer virus?",
+    //     options: ["Sending e-mail messages", "Using a laptop during the winter", "Opening e-mail attachments", "Shopping on-line"],
+    //     correct: "Opening e-mail attachments",
+    // },
+    // {
+    //     id: "7",
+    //     question: "Google (www.google.com) is a:",
+    //     options: ["Search Engine", "Number in Math", "Directory of images", "Chat service on the web"],
+    //     correct: "Search Engine",
+    // },
+    // {
+    //     id: "8",
+    //     question: "Which is not an Internet protocol?",
+    //     options: ["HTTP", "FTP", "STP", "IP"],
+    //     correct: "STP",
+    // },
+    // {
+    //     id: "9",
+    //     question: "Which of the following is not a valid domain name?",
+    //     options: ["www.yahoo.com", "www.yahoo.co.uk", "www.com.yahoo", "www.yahoo.co.in"],
+    //     correct: "www.com.yahoo",
+        
+    // },
 ];
 
 //Restart Quiz
